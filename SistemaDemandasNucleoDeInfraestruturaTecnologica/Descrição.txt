@@ -1,0 +1,41 @@
+Sistema para gerenciamento NIT
+
+Projeto: ampliação parque tecnológico.
+
+Funcionalidades do Programa
+    Cadastrar escolas
+    Cadastrar, Validar, Aprovar, Encerrar as demandas
+    Cadastrar Acompanhamentos
+        -Lembrete: notificar periodicamente sobre as demandas pendentes
+    Gerar relatório de saída por escola/ano.
+
+Relacionamentos:
+    Usuários.
+    Escolas possuem demandas -> Demandas possuem acompanhamento.
+
+Estrutura do Banco de Dados:
+    Usuários:
+        -ID:
+        Tipo: Administrador, Operadores (gerais), RepresentanteDaEscola.
+        Nome:
+        Email:
+        Senha:
+    Demandas:
+        -ID:
+        -Tipo: Autorização para cabeamento, compra de Access Point, etc
+    Acompanhamento:
+        -ID:
+        -Tipo: (Lista de Recursos) SDM, Tela Interativa, Multimidia, Switch, etc
+        -DataInicio: 
+        -PrazoFinal: 
+        -Status: Pendente, Finalizado
+    Escolas:
+        -ID:
+        -Nome
+        -EmailEscola
+        -EmailCaixaEscolar
+        -TelEscola
+        -TelDirecao
+        -Regional: norte de BH, sul de BH (Lugar)
+        -Grau: Fundamental, Infantil, Gerede
+        -Tipo: PPP ou Não PPP
