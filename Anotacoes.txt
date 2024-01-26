@@ -1,7 +1,26 @@
+--------------------------------------
+Configuração inicial:
+--------------------------------------
+    Criar ambiente Virtual:
+        Criar um ambiente virtual
+        python -m venv ./ambiente_virtual
+
+        Habilitar ambiente virtual:
+            ambiente_virtual/Scripts/Activate
+
+        Desabilitar Ambiente Virtual:
+            deactivate
+    
+    -Instalar Django:
+        pip install django
+    
+    -Atualizar pip:
+        python.exe -m pip install --upgrade pip
+
+
 -------------------------------------
 ---------- Projeto: NIT -------------
 -------------------------------------
-
 
 Parte 1:
 Criar o projeto com o django:
