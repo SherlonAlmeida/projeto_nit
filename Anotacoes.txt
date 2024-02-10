@@ -75,13 +75,11 @@ Registrar o Model criado no arquivo 'core/admin.py'
         
     admin.site.register(Demandas,DemandasAdmin)#Sherlon: Adicionado
 
-#------------------ ESTAMOS AQUI ---------->
-
 Parte 7:
 Definir uma View: Em Django, uma view é uma função Python que recebe uma requisição web e retorna uma resposta web.
 Abra o arquivo core/views.py e adicione o seguinte código:
     from django.http import HttpResponse
-    def eventos(request):
+    def ola_mundo(request):
         return HttpResponse("Olá, Mundo!")
 
 Parte 8:
@@ -91,8 +89,6 @@ Criar uma view que renderiza o arquivo .html criado dentro do arquivo 'core/view
 Criar a rota dentro do arquivo 'agenda/urls.py'
 Adicionar o caminho da pasta template no arquivo de configurações 'agenda/settings.py'
     'DIRS': [os.path.join(BASE_DIR, 'templates')],
-
-
 
 Parte Final:
 Executar o Servidor de Desenvolvimento: Inicie novamente o servidor de desenvolvimento do Django com o seguinte comando:
